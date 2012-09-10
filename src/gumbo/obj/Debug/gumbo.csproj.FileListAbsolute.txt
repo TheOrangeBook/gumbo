@@ -1,5 +1,0 @@
-C:\dev\gumbo\src\gumbo\bin\Debug\gumbo.dll
-C:\dev\gumbo\src\gumbo\bin\Debug\gumbo.pdb
-C:\dev\gumbo\src\gumbo\obj\Debug\ResolveAssemblyReference.cache
-C:\dev\gumbo\src\gumbo\obj\Debug\gumbo.dll
-C:\dev\gumbo\src\gumbo\obj\Debug\gumbo.pdb

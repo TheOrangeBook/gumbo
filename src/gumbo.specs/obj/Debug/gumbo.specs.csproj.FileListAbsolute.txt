@@ -1,9 +1,0 @@
-C:\dev\gumbo\src\gumbo.specs\bin\Debug\gumbo.specs.dll
-C:\dev\gumbo\src\gumbo.specs\bin\Debug\gumbo.specs.pdb
-C:\dev\gumbo\src\gumbo.specs\bin\Debug\gumbo.dll
-C:\dev\gumbo\src\gumbo.specs\bin\Debug\nunit.framework.dll
-C:\dev\gumbo\src\gumbo.specs\bin\Debug\gumbo.pdb
-C:\dev\gumbo\src\gumbo.specs\bin\Debug\nunit.framework.xml
-C:\dev\gumbo\src\gumbo.specs\obj\Debug\ResolveAssemblyReference.cache
-C:\dev\gumbo\src\gumbo.specs\obj\Debug\gumbo.specs.dll
-C:\dev\gumbo\src\gumbo.specs\obj\Debug\gumbo.specs.pdb
