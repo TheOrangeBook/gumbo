@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C6D5C9D3-F8B7-4959-A995-33459874FFF5}</ProjectGuid>
+    <ProjectGuid>{8F363F53-3A75-426A-8FEF-114A582FA56A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>gumbo</RootNamespace>
-    <AssemblyName>gumbo</AssemblyName>
+    <RootNamespace>gumbo.database.mssql</RootNamespace>
+    <AssemblyName>gumbo.database.mssql</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,15 +33,28 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GumboBag.cs" />
-    <Compile Include="GumboCaster.cs" />
-    <Compile Include="GumboObject.cs" />
-    <Compile Include="GumboProperty.cs" />
-    <Compile Include="GumboRepository.cs" />
+    <Compile Include="GumboMsSqlSettings.cs" />
+    <Compile Include="GumboTSql.cs" />
+    <Compile Include="MsSqlRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pg_GetProperties.sql" />
+    <Content Include="sp_GetProperties.sql" />
+    <Content Include="GumboProperty.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gumbo\gumbo.csproj">
+      <Project>{C6D5C9D3-F8B7-4959-A995-33459874FFF5}</Project>
+      <Name>gumbo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
