@@ -1,3 +1,4 @@
 src/packages
 bin
 obj
+_ReSharper.*
