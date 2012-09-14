@@ -1,18 +1,4 @@
-﻿CREATE TABLE gumbo_property
-(
-	id uniqueidentifier, --snowflake
-	[object_id] uniqueidentifier, --snowflake, fk
-	tenant_id uniqueidentifier, --fk
-
-	name nvarchar(255),
-	value nvarchar(255),
-	[type] nvarchar(255),
-
-	effective_on datetime
-)
-
-
---postgres
+﻿--postgres
 
 
 

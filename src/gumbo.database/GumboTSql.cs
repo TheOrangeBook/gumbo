@@ -20,5 +20,45 @@ namespace gumbo.database.mssql
  ) [Rank]
  WHERE [Rank] = 1 AND ThingId = @target_id";
 
+
+
+
+        public static readonly string CreateObjectsTable = @"
+CREATE TABLE GumboObject
+(
+    Id uniqueidentifier, --pk, snowflake
+    [Type] nvarchar(max), --could be keyed as well
+    
+    --possible extension fields?
+    
+    [TenantId] uniqueidentifier
+)
+";
+
+        public static readonly string CreatePropertiesTable = @"
+CREATE TABLE GumboProperty 
+(
+    Id uniqueidentifier, --pk, snowflake
+    [ObjectId] uniqueidentifier, --conceptual fk, snowflake
+    [Version] bigint, --snowflake timestamp
+
+    [Key] bigint,
+    [Type] nvarchar(max), --prolly key this too
+    [Value] varchar(max),
+    
+    [TenantId] uniqueidentifier
+)
+";
+
+        public static readonly string CreatePropertyNamesTable = @"
+CREATE TABLE GumboPropertyNames
+(
+    [Type] nvarchar(max),
+    [key] bigint,
+    [Description] nvarchar(max)
+)
+";
+        //add primary key code
+        //add indexes
     }
 }
