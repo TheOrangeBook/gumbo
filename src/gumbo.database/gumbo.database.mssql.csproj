@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExecuteTSql.cs" />
     <Compile Include="GumboMsSqlSettings.cs" />
     <Compile Include="GumboTSql.cs" />
     <Compile Include="MsSqlRepository.cs" />

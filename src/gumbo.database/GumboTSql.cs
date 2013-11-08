@@ -54,7 +54,7 @@ CREATE TABLE GumboProperty
 CREATE TABLE GumboPropertyNames
 (
     [Type] nvarchar(max),
-    [key] bigint,
+    [Key] bigint,
     [Description] nvarchar(max)
 )
 ";

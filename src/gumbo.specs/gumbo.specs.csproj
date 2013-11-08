@@ -42,8 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stuff.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\gumbo.database.pgsql\gumbo.database.pgsql.csproj">
+      <Project>{211B0E4B-B1F3-400A-9A49-95E0855E296D}</Project>
+      <Name>gumbo.database.pgsql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gumbo.database\gumbo.database.mssql.csproj">
+      <Project>{8F363F53-3A75-426A-8FEF-114A582FA56A}</Project>
+      <Name>gumbo.database.mssql</Name>
+    </ProjectReference>
     <ProjectReference Include="..\gumbo\gumbo.csproj">
       <Project>{C6D5C9D3-F8B7-4959-A995-33459874FFF5}</Project>
       <Name>gumbo</Name>
